@@ -1,0 +1,99 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    background: #f6f0f0;
+}
+
+.container{
+    position: relative;
+    height: 34rem;
+    width:470px;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.formBox{
+    background: #000;
+    box-shadow: 2px 6px 24px rgb(97, 95, 95);
+    border-radius: .5rem;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.formBox .title{
+    margin-bottom: 2rem;
+   position: relative;
+}
+
+.inputBox{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputFiled{
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.inputFiled input,
+.inputFiled textarea{
+    color: #000;
+    border: none;
+    border-bottom: 1px solid #615f5f;
+    padding: .4rem .3rem;
+    outline: none;
+    background: transparent;
+    width: 80%;
+    font-size: 1.3rem;
+}
+
+.inputFiled input::placeholder,
+ textarea::placeholder{
+  font-size: 1rem;
+  padding-left: .2rem;
+}
+
+
+
+.btn{
+    position: absolute;
+    height: 2rem;
+    width: 5rem;
+    color: #fff;
+    background: crimson;
+    border-radius: .3rem;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 4;
+    background: #000;
+}
+
+.btn:hover{
+    box-shadow: 0px 2px 8px rgb(47, 43, 43);
+}
+
+.curve{
+    background: rgb(253, 252, 253);
+    height: 88.3%;
+    border-radius: .5rem;
+    width: 87.2%;
+    position: absolute;
+    clip-path: circle(80% at 0);
+    
+}
